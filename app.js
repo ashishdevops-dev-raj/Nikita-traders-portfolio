@@ -16,7 +16,7 @@
     var badge = document.getElementById('nav-badge');
     if (!menu) return;
     if (y > 60) {
-      header.classList.add('bg-white/95', 'shadow-md', 'backdrop-blur-md');
+      header.classList.add('nt-header--scrolled');
       header.classList.remove('bg-transparent');
       if (nav) nav.classList.add('md:py-2');
       menu.querySelectorAll('.nav-link').forEach(function (a) {
@@ -36,7 +36,7 @@
           'flex h-10 w-10 items-center justify-center rounded-lg bg-brand-orange font-bold text-white shadow-md ring-0 transition';
       }
     } else {
-      header.classList.remove('bg-white/95', 'shadow-md', 'backdrop-blur-md');
+      header.classList.remove('nt-header--scrolled');
       header.classList.add('bg-transparent');
       if (nav) nav.classList.remove('md:py-2');
       menu.querySelectorAll('.nav-link').forEach(function (a) {
@@ -60,6 +60,48 @@
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+
+  /* Stats counters */
+  var statsRoot = document.getElementById('stats');
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function runStatCounters() {
+    if (!statsRoot) return;
+    var nodes = statsRoot.querySelectorAll('[data-nt-count]');
+    nodes.forEach(function (el) {
+      var target = parseInt(el.getAttribute('data-nt-count'), 10);
+      var suffix = el.getAttribute('data-nt-suffix') || '';
+      if (isNaN(target)) return;
+      if (reduceMotion) {
+        el.textContent = String(target) + suffix;
+        return;
+      }
+      var startTime = null;
+      var duration = 1500;
+      function tick(ts) {
+        if (startTime === null) startTime = ts;
+        var p = Math.min((ts - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  if (statsRoot) {
+    var statsFired = false;
+    var statsObs = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting || statsFired) return;
+          statsFired = true;
+          runStatCounters();
+          statsObs.disconnect();
+        });
+      },
+      { root: null, rootMargin: '0px', threshold: 0.2 }
+    );
+    statsObs.observe(statsRoot);
+  }
 
   /* Scroll reveal */
   var reveals = document.querySelectorAll('.reveal');

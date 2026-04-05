@@ -38,6 +38,7 @@
       </a>
       <ul id="nav-menu" class="flex min-w-0 flex-1 flex-wrap items-center justify-end gap-x-0.5 gap-y-1 sm:gap-x-1 md:justify-end md:gap-1">
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#hero">Home</a></li>
+        <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#stats">Stats</a></li>
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#about">About</a></li>
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#vision">Vision</a></li>
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#services">Services</a></li>
@@ -45,36 +46,76 @@
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#delivery-flow">Flow</a></li>
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#booking-process">Roadmap</a></li>
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#clients">Clients</a></li>
-        <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#org">Org Chart</a></li>
+        <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#org">Team</a></li>
         <li><a class="nav-link block rounded-md px-2 py-1.5 text-xs font-medium text-white transition hover:bg-white/10 hover:text-orange-200 sm:px-2.5 sm:text-sm" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main-content">
-  <!-- Hero — portfolio-style headline + proof points -->
-  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden pt-24 md:pt-28">
+  <!-- Hero — premium SaaS-style -->
+  <section id="hero" class="relative flex min-h-screen items-center overflow-hidden pt-24 md:pt-28">
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
     <div class="absolute inset-0 hero-gradient"></div>
-    <div class="relative z-10 mx-auto max-w-5xl px-4 text-center text-white">
-      <p class="reveal text-xs font-bold uppercase tracking-[0.28em] text-sky-200/90">Nikita Traders</p>
-      <h1 class="reveal mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl" style="transition-delay: 80ms">Corporate transport partner</h1>
-      <p class="reveal mt-3 text-lg font-semibold text-orange-200 md:text-xl" style="transition-delay: 120ms">NT Services Management</p>
-      <p class="reveal mx-auto mt-6 max-w-2xl text-base leading-relaxed text-blue-100/95 md:text-lg" style="transition-delay: 160ms">
-        Building reliable, safe, and measurable cab &amp; fleet programs for enterprises—with live tracking, 24×7 operations, and ISO-backed processes across Eastern India.
-      </p>
-      <div class="reveal mt-8 flex flex-wrap items-center justify-center gap-3 text-sm font-semibold" style="transition-delay: 200ms">
-        <span class="rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur-sm">Est. 2023</span>
-        <span class="rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur-sm">150+ vehicles</span>
-        <span class="rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur-sm">ISO certified</span>
-        <span class="rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur-sm">12+ locations</span>
-      </div>
-      <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-4" style="transition-delay: 240ms">
-        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-brand-orange px-8 py-3.5 text-base font-bold text-white shadow-lg transition hover:scale-[1.02] hover:bg-orange-600 hover:shadow-xl">Get in touch <i class="fa-solid fa-arrow-right text-sm"></i></a>
-        <a href="#about" class="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3.5 text-base font-semibold backdrop-blur transition hover:bg-white/20">View summary</a>
+    <div class="absolute inset-0 nt-hero-grid" aria-hidden="true"></div>
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center lg:mx-0 lg:max-w-3xl lg:text-left">
+        <div class="reveal flex justify-center lg:justify-start">
+          <span class="nt-hero-badge"><span class="nt-hero-badge-dot" aria-hidden="true"></span> ISO-certified · 24×7 operations</span>
+        </div>
+        <h1 class="reveal mt-8 text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl" style="transition-delay: 60ms">
+          Corporate mobility that scales with your business
+        </h1>
+        <p class="reveal mt-5 text-lg font-medium text-sky-200/95 md:text-xl" style="transition-delay: 100ms">Nikita Traders · NT Services Management</p>
+        <p class="reveal mx-auto mt-6 max-w-xl text-base leading-relaxed text-blue-100/95 md:text-lg lg:mx-0" style="transition-delay: 140ms">
+          End-to-end fleet programs for enterprises across Bihar, Jharkhand &amp; Odisha—live GPS, trained crews, and MIS-ready reporting from day one.
+        </p>
+        <div class="reveal mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start" style="transition-delay: 180ms">
+          <a href="#contact" class="nt-hero-cta-primary justify-center"><span>Request a proposal</span><i class="fa-solid fa-arrow-right text-sm opacity-90"></i></a>
+          <a href="#stats" class="nt-hero-cta-secondary justify-center"><i class="fa-solid fa-chart-simple text-sm"></i><span>View impact metrics</span></a>
+        </div>
+        <div class="reveal mt-12 flex flex-wrap items-center justify-center gap-3 lg:justify-start" style="transition-delay: 220ms">
+          <span class="nt-trust-pill">150+ vehicles</span>
+          <span class="nt-trust-pill">Est. 2023</span>
+          <span class="nt-trust-pill">12+ locations</span>
+          <span class="nt-trust-pill">Enterprise SLA</span>
+        </div>
       </div>
     </div>
-    <a href="#about" class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-bounce text-white/80" aria-label="Scroll down"><i class="fa-solid fa-chevron-down text-2xl"></i></a>
+    <a href="#stats" class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-bounce text-white/75 transition hover:text-white" aria-label="Scroll to stats"><i class="fa-solid fa-chevron-down text-2xl"></i></a>
+  </section>
+
+  <!-- Stats counter -->
+  <section id="stats" class="nt-stats-section relative z-20 border-y py-16 md:py-20" aria-labelledby="stats-heading">
+    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+      <div class="reveal mb-12 text-center">
+        <p id="stats-heading" class="text-xs font-bold uppercase tracking-[0.2em] text-brand-orange">Impact at a glance</p>
+        <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">Built for reliability at scale</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-slate-600">Numbers our partners care about—fleet depth, coverage, and round-the-clock command.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-4 md:gap-6 lg:grid-cols-4">
+        <div class="nt-stat-card reveal">
+          <div class="nt-stat-icon"><i class="fa-solid fa-car-side"></i></div>
+          <span class="nt-stat-value" data-nt-count="150" data-nt-suffix="+">0</span>
+          <span class="nt-stat-label">Fleet vehicles</span>
+        </div>
+        <div class="nt-stat-card reveal" style="transition-delay: 80ms">
+          <div class="nt-stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <span class="nt-stat-value" data-nt-count="12" data-nt-suffix="+">0</span>
+          <span class="nt-stat-label">Active locations</span>
+        </div>
+        <div class="nt-stat-card reveal" style="transition-delay: 160ms">
+          <div class="nt-stat-icon"><i class="fa-solid fa-headset"></i></div>
+          <span class="nt-stat-value" data-nt-count="24" data-nt-suffix="/7">0</span>
+          <span class="nt-stat-label">Operations coverage</span>
+        </div>
+        <div class="nt-stat-card reveal" style="transition-delay: 240ms">
+          <div class="nt-stat-icon"><i class="fa-solid fa-building"></i></div>
+          <span class="nt-stat-value" data-nt-count="8" data-nt-suffix="+">0</span>
+          <span class="nt-stat-label">Enterprise clients</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- About -->
@@ -86,7 +127,7 @@
         <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">Professional overview</h2>
         <p class="mx-auto mt-3 max-w-2xl text-slate-600 md:mx-0">Who we serve, where we operate, and how we keep commuters and clients protected.</p>
       </div>
-      <div class="reveal mx-auto max-w-3xl rounded-2xl border border-slate-200/90 bg-white p-8 text-center text-lg leading-relaxed text-slate-600 shadow-sm md:p-10 md:text-left">
+      <div class="reveal nt-surface-card mx-auto max-w-3xl p-8 text-center text-lg leading-relaxed text-slate-600 md:p-10 md:text-left">
         We are a leading cab rental service provider operating in Bihar, Jharkhand, and Orissa. Established in 2023, we provide safe, cost-effective and reliable transport solutions for corporate, banks, media, FMCG, telecom, and ITES sectors—backed by ISO certification and trained staff aligned with HSSE standards.
       </div>
       <div class="mt-14 grid gap-6 sm:grid-cols-3">
@@ -151,29 +192,35 @@
         <p class="mx-auto mt-3 max-w-2xl text-slate-600 md:mx-0">Fleet management and monitoring—from any device.</p>
       </div>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <div class="reveal flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-          <i class="fa-solid fa-truck-field text-4xl text-brand-blue"></i>
+        <div class="reveal nt-surface-card nt-service-card flex flex-col items-center p-8 text-center">
+          <span class="nt-icon-ring"><i class="fa-solid fa-truck-field"></i></span>
           <h3 class="mt-4 font-bold text-slate-800">Fleet Management</h3>
+          <p class="mt-2 text-sm text-slate-500">Central control of allocation &amp; compliance</p>
         </div>
-        <div class="reveal flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md" style="transition-delay: 50ms">
-          <i class="fa-solid fa-location-dot text-4xl text-brand-orange"></i>
+        <div class="reveal nt-surface-card nt-service-card flex flex-col items-center p-8 text-center" style="transition-delay: 50ms">
+          <span class="nt-icon-ring"><i class="fa-solid fa-location-dot"></i></span>
           <h3 class="mt-4 font-bold text-slate-800">GPS Tracking</h3>
+          <p class="mt-2 text-sm text-slate-500">Live visibility across every route</p>
         </div>
-        <div class="reveal flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md" style="transition-delay: 100ms">
-          <i class="fa-solid fa-user-shield text-4xl text-brand-blue"></i>
+        <div class="reveal nt-surface-card nt-service-card flex flex-col items-center p-8 text-center" style="transition-delay: 100ms">
+          <span class="nt-icon-ring"><i class="fa-solid fa-user-shield"></i></span>
           <h3 class="mt-4 font-bold text-slate-800">Driver Monitoring</h3>
+          <p class="mt-2 text-sm text-slate-500">Safety-first behaviour analytics</p>
         </div>
-        <div class="reveal flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md" style="transition-delay: 150ms">
-          <i class="fa-solid fa-gas-pump text-4xl text-brand-orange"></i>
+        <div class="reveal nt-surface-card nt-service-card flex flex-col items-center p-8 text-center" style="transition-delay: 150ms">
+          <span class="nt-icon-ring"><i class="fa-solid fa-gas-pump"></i></span>
           <h3 class="mt-4 font-bold text-slate-800">Fuel Tracking</h3>
+          <p class="mt-2 text-sm text-slate-500">Cost control with audit trails</p>
         </div>
-        <div class="reveal flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md" style="transition-delay: 200ms">
-          <i class="fa-solid fa-clipboard-check text-4xl text-brand-blue"></i>
+        <div class="reveal nt-surface-card nt-service-card flex flex-col items-center p-8 text-center" style="transition-delay: 200ms">
+          <span class="nt-icon-ring"><i class="fa-solid fa-clipboard-check"></i></span>
           <h3 class="mt-4 font-bold text-slate-800">Trip Audit</h3>
+          <p class="mt-2 text-sm text-slate-500">Evidence-backed trip records</p>
         </div>
-        <div class="reveal flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:col-span-2 lg:col-span-1 xl:col-span-2 xl:max-w-md xl:mx-auto" style="transition-delay: 250ms">
-          <i class="fa-solid fa-chart-line text-4xl text-brand-orange"></i>
+        <div class="reveal nt-surface-card nt-service-card flex flex-col items-center p-8 text-center sm:col-span-2 lg:col-span-1 xl:col-span-2 xl:mx-auto xl:max-w-md" style="transition-delay: 250ms">
+          <span class="nt-icon-ring"><i class="fa-solid fa-chart-line"></i></span>
           <h3 class="mt-4 font-bold text-slate-800">Analytics Dashboard</h3>
+          <p class="mt-2 text-sm text-slate-500">Executive-ready MIS in one view</p>
         </div>
       </div>
     </div>
@@ -228,19 +275,19 @@
         <p class="mx-auto mt-3 max-w-2xl text-slate-600 md:mx-0">Round-the-clock support and on-site discipline.</p>
       </div>
       <div class="grid gap-8 md:grid-cols-3">
-        <div class="reveal rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md">
-          <i class="fa-solid fa-headset text-3xl text-brand-blue"></i>
-          <h3 class="mt-4 text-xl font-bold">Managers &amp; Supervisors</h3>
+        <div class="reveal nt-surface-card p-8">
+          <span class="nt-icon-ring text-xl"><i class="fa-solid fa-headset"></i></span>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Managers &amp; Supervisors</h3>
           <p class="mt-2 text-slate-600">Site managers and trained supervisors on each location with <strong class="text-brand-orange">24×7</strong> coverage.</p>
         </div>
-        <div class="reveal rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md" style="transition-delay: 80ms">
-          <i class="fa-solid fa-desktop text-3xl text-brand-orange"></i>
-          <h3 class="mt-4 text-xl font-bold">Help Desk System</h3>
+        <div class="reveal nt-surface-card p-8" style="transition-delay: 80ms">
+          <span class="nt-icon-ring text-xl"><i class="fa-solid fa-desktop"></i></span>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Help Desk System</h3>
           <p class="mt-2 text-slate-600">Computers, printers, and experienced operators for routing, scheduling, MIS, and documentation on site.</p>
         </div>
-        <div class="reveal rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md" style="transition-delay: 160ms">
-          <i class="fa-solid fa-satellite-dish text-3xl text-brand-blue"></i>
-          <h3 class="mt-4 text-xl font-bold">Real-time Monitoring</h3>
+        <div class="reveal nt-surface-card p-8" style="transition-delay: 160ms">
+          <span class="nt-icon-ring text-xl"><i class="fa-solid fa-satellite-dish"></i></span>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Real-time Monitoring</h3>
           <p class="mt-2 text-slate-600">GPS, communication systems, and live visibility into trips and fleet status.</p>
         </div>
       </div>
@@ -257,31 +304,31 @@
         <p class="mx-auto mt-2 max-w-2xl text-slate-600">From intake to insight—aligned with how modern ops teams expect visibility.</p>
       </div>
       <div class="reveal flex flex-col items-stretch gap-4 md:flex-row md:flex-wrap md:justify-center md:gap-2">
-        <div class="flex min-h-[5.5rem] flex-1 flex-col justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-center md:min-w-[9.5rem] md:max-w-[11rem]">
+        <div class="nt-flow-step flex min-h-[5.5rem] flex-1 flex-col justify-center md:min-w-[9.5rem] md:max-w-[11rem]">
           <span class="text-[10px] font-bold uppercase tracking-wider text-brand-orange">01</span>
           <p class="mt-1 text-sm font-bold text-slate-900">Request</p>
           <p class="mt-1 text-xs text-slate-600">Contract &amp; roster intake</p>
         </div>
         <span class="flow-arrow" aria-hidden="true">→</span>
-        <div class="flex min-h-[5.5rem] flex-1 flex-col justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-center md:min-w-[9.5rem] md:max-w-[11rem]">
+        <div class="nt-flow-step flex min-h-[5.5rem] flex-1 flex-col justify-center md:min-w-[9.5rem] md:max-w-[11rem]">
           <span class="text-[10px] font-bold uppercase tracking-wider text-brand-orange">02</span>
           <p class="mt-1 text-sm font-bold text-slate-900">Route</p>
           <p class="mt-1 text-xs text-slate-600">Help desk &amp; scheduling</p>
         </div>
         <span class="flow-arrow" aria-hidden="true">→</span>
-        <div class="flex min-h-[5.5rem] flex-1 flex-col justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-center md:min-w-[9.5rem] md:max-w-[11rem]">
+        <div class="nt-flow-step flex min-h-[5.5rem] flex-1 flex-col justify-center md:min-w-[9.5rem] md:max-w-[11rem]">
           <span class="text-[10px] font-bold uppercase tracking-wider text-brand-orange">03</span>
           <p class="mt-1 text-sm font-bold text-slate-900">Deploy</p>
           <p class="mt-1 text-xs text-slate-600">Cab &amp; driver assignment</p>
         </div>
         <span class="flow-arrow" aria-hidden="true">→</span>
-        <div class="flex min-h-[5.5rem] flex-1 flex-col justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-center md:min-w-[9.5rem] md:max-w-[11rem]">
+        <div class="nt-flow-step flex min-h-[5.5rem] flex-1 flex-col justify-center md:min-w-[9.5rem] md:max-w-[11rem]">
           <span class="text-[10px] font-bold uppercase tracking-wider text-brand-orange">04</span>
           <p class="mt-1 text-sm font-bold text-slate-900">Trip</p>
           <p class="mt-1 text-xs text-slate-600">GPS &amp; live monitoring</p>
         </div>
         <span class="flow-arrow" aria-hidden="true">→</span>
-        <div class="flex min-h-[5.5rem] flex-1 flex-col justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-center md:min-w-[9.5rem] md:max-w-[11rem]">
+        <div class="nt-flow-step flex min-h-[5.5rem] flex-1 flex-col justify-center md:min-w-[9.5rem] md:max-w-[11rem]">
           <span class="text-[10px] font-bold uppercase tracking-wider text-brand-orange">05</span>
           <p class="mt-1 text-sm font-bold text-slate-900">MIS</p>
           <p class="mt-1 text-xs text-slate-600">Reports &amp; billing data</p>
@@ -364,58 +411,27 @@
         <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">Why choose Nikita Traders</h2>
         <p class="mx-auto mt-3 max-w-2xl text-slate-600">End-to-end corporate transport with measurable outcomes.</p>
       </div>
-      <div class="relative mx-auto max-w-4xl">
-        <div class="absolute left-4 top-0 hidden h-full w-0.5 bg-gradient-to-b from-brand-blue via-brand-orange to-brand-blue md:left-1/2 md:block md:-translate-x-1/2"></div>
-        <ul class="space-y-10">
-          <li class="reveal relative flex flex-col gap-4 md:flex-row md:items-center md:odd:flex-row-reverse">
-            <div class="flex flex-1 justify-end md:odd:justify-start">
-              <div class="w-full max-w-md rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:shadow-md md:text-right md:odd:text-left">
-                <h3 class="font-bold text-brand-blue-dark">Real-time tracking</h3>
-                <p class="mt-2 text-sm text-slate-600">Live cab visibility and communication with drivers through company systems.</p>
-              </div>
-            </div>
-            <div class="absolute left-4 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-brand-orange text-white shadow-md md:left-1/2 md:translate-x-[-50%]">
-              <i class="fa-solid fa-satellite"></i>
-            </div>
-            <div class="hidden flex-1 md:block"></div>
-          </li>
-          <li class="reveal relative flex flex-col gap-4 md:flex-row md:items-center">
-            <div class="flex flex-1 justify-end">
-              <div class="w-full max-w-md rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:shadow-md md:text-right">
-                <h3 class="font-bold text-brand-blue-dark">MIS reporting</h3>
-                <p class="mt-2 text-sm text-slate-600">Reports for no-show, OTD, OTA, invoicing, and monthly management summaries.</p>
-              </div>
-            </div>
-            <div class="absolute left-4 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-brand-blue text-white shadow-md md:left-1/2 md:translate-x-[-50%]">
-              <i class="fa-solid fa-file-lines"></i>
-            </div>
-            <div class="hidden flex-1 md:block"></div>
-          </li>
-          <li class="reveal relative flex flex-col gap-4 md:flex-row md:items-center md:odd:flex-row-reverse">
-            <div class="flex flex-1 justify-end md:odd:justify-start">
-              <div class="w-full max-w-md rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:shadow-md md:text-right md:odd:text-left">
-                <h3 class="font-bold text-brand-blue-dark">Routing &amp; cab deployment</h3>
-                <p class="mt-2 text-sm text-slate-600">Help desk support for routing, scheduling, and compliant deployment of cabs.</p>
-              </div>
-            </div>
-            <div class="absolute left-4 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-brand-orange text-white shadow-md md:left-1/2 md:translate-x-[-50%]">
-              <i class="fa-solid fa-route"></i>
-            </div>
-            <div class="hidden flex-1 md:block"></div>
-          </li>
-          <li class="reveal relative flex flex-col gap-4 md:flex-row md:items-center">
-            <div class="flex flex-1 justify-end">
-              <div class="w-full max-w-md rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:shadow-md md:text-right">
-                <h3 class="font-bold text-brand-blue-dark">Customer support</h3>
-                <p class="mt-2 text-sm text-slate-600">Real-time assistance to users and cabs when it matters most.</p>
-              </div>
-            </div>
-            <div class="absolute left-4 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-brand-blue text-white shadow-md md:left-1/2 md:translate-x-[-50%]">
-              <i class="fa-solid fa-life-ring"></i>
-            </div>
-            <div class="hidden flex-1 md:block"></div>
-          </li>
-        </ul>
+      <div class="grid gap-6 sm:grid-cols-2 lg:gap-8">
+        <article class="reveal nt-why-card">
+          <span class="nt-why-icon"><i class="fa-solid fa-satellite"></i></span>
+          <h3 class="text-lg font-bold text-brand-blue-dark">Real-time tracking</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Live cab visibility and communication with drivers through your enterprise systems.</p>
+        </article>
+        <article class="reveal nt-why-card" style="transition-delay: 70ms">
+          <span class="nt-why-icon"><i class="fa-solid fa-file-lines"></i></span>
+          <h3 class="text-lg font-bold text-brand-blue-dark">MIS reporting</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">No-show, OTD, OTA, invoicing, and monthly management summaries—export-ready.</p>
+        </article>
+        <article class="reveal nt-why-card" style="transition-delay: 140ms">
+          <span class="nt-why-icon"><i class="fa-solid fa-route"></i></span>
+          <h3 class="text-lg font-bold text-brand-blue-dark">Routing &amp; deployment</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Help desk support for routing, scheduling, and compliant cab deployment at scale.</p>
+        </article>
+        <article class="reveal nt-why-card" style="transition-delay: 210ms">
+          <span class="nt-why-icon"><i class="fa-solid fa-life-ring"></i></span>
+          <h3 class="text-lg font-bold text-brand-blue-dark">Customer support</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Real-time assistance to commuters and field teams when it matters most.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -501,282 +517,153 @@
         <p class="mx-auto mt-3 max-w-2xl text-slate-600 md:mx-0">Organizations that rely on our B2B transport programs.</p>
       </div>
       <div class="reveal grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">Coca-Cola</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">Metrotele</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">Solasta Enterprises</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">WTI Pvt Ltd</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">Sree Sai</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">Autoridor</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">ACME Services</div>
-        <div class="flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm transition hover:border-brand-blue/30 hover:shadow-md">MS Service Ltd</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">Coca-Cola</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">Metrotele</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">Solasta Enterprises</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">WTI Pvt Ltd</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">Sree Sai</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">Autoridor</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">ACME Services</div>
+        <div class="nt-client-tile flex min-h-[100px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center text-sm font-bold text-slate-700 shadow-sm">MS Service Ltd</div>
       </div>
     </div>
   </section>
 
-  <!-- Organization Structure — OrgChartContainer / OrgColumn / OrgCard -->
-  <section id="org" class="border-t border-slate-200 bg-slate-100 py-20 md:py-28" aria-labelledby="org-heading">
+  <!-- Organization — clean grid (no connector lines) -->
+  <section id="org" class="border-t border-slate-200 bg-slate-50 py-20 md:py-28" aria-labelledby="org-heading">
     <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-      <div class="reveal mb-12 text-center">
-        <span class="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">Organization</span>
-        <h2 id="org-heading" class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">Organization structure</h2>
-        <p class="mx-auto mt-3 max-w-2xl text-slate-600">Clear reporting lines from the Director through general managers to field teams—built for accountability at scale.</p>
+      <div class="reveal mb-14 text-center">
+        <span class="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">Structure</span>
+        <h2 id="org-heading" class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">Leadership &amp; pillars</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-slate-600">Director-led functions in a simple grid—each row is a role with clear ownership.</p>
       </div>
 
-      <!-- OrgChartContainer -->
-      <div class="reveal mx-auto max-w-6xl overflow-visible rounded-2xl border border-slate-200/90 bg-white p-6 shadow-xl shadow-slate-300/20 ring-1 ring-slate-100 md:p-10">
-        <!-- Director level -->
-        <div class="reveal flex flex-col items-center">
-          <!-- OrgCard (director variant) -->
-          <article
-            tabindex="0"
-            class="org-card group relative w-full max-w-sm rounded-xl border-2 border-[#1D4ED8]/20 bg-gradient-to-br from-white to-blue-50/40 p-4 shadow-md shadow-blue-900/5 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#1D4ED8]/35 hover:shadow-lg hover:shadow-blue-900/10 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2"
-            aria-label="Director — sets strategic direction and oversees all functions."
-          >
-            <div class="flex items-center gap-3">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-lg font-bold text-white shadow-md ring-2 ring-white" aria-hidden="true">
-                <i class="fa-solid fa-user-tie text-base"></i>
-              </div>
-              <div class="min-w-0">
-                <h3 class="text-base font-bold text-slate-900">Director</h3>
-                <p class="text-[11px] font-semibold uppercase tracking-wider text-[#1D4ED8]">Executive</p>
-              </div>
+      <div class="reveal mb-12 flex justify-center">
+        <article class="nt-org-leader-card w-full max-w-lg">
+          <div class="flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left">
+            <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-2xl text-white shadow-lg">
+              <i class="fa-solid fa-user-tie"></i>
             </div>
-            <div
-              class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,16rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-left text-xs font-normal leading-snug text-white shadow-xl"
-              role="tooltip"
-            >
-              Strategic leadership, governance, and oversight across operations, sales, compliance, and finance.
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">Director</h3>
+              <p class="text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">Executive</p>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">Strategic direction, governance, and oversight across operations, sales, compliance, and finance.</p>
             </div>
-          </article>
-          <div class="mt-6 flex flex-col items-center" aria-hidden="true">
-            <div class="h-8 w-px bg-slate-200"></div>
-            <div class="h-1 w-1 rounded-full bg-slate-300"></div>
           </div>
+        </article>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div class="reveal nt-org-pillar" style="transition-delay:50ms">
+          <h3 class="nt-org-pillar-title">Operations</h3>
+          <ul class="space-y-2">
+            <li class="nt-org-role"><span class="nt-org-avatar">GM</span> GM Operations</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">MO</span> Manager Operation</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">SI</span> Site Incharge</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">SV</span> Supervisor</li>
+            <li class="nt-org-role"><span class="nt-org-avatar nt-org-avatar--accent">DR</span> Driver</li>
+          </ul>
         </div>
-
-        <!-- OrgColumn grid: mobile stack → tablet 2 → desktop 4 -->
-        <div class="mt-2 grid grid-cols-1 gap-10 border-t border-slate-100 pt-10 md:grid-cols-2 md:gap-x-8 md:gap-y-12 xl:grid-cols-4 xl:gap-8">
-          <!-- OrgColumn: Operations -->
-          <div class="reveal flex flex-col items-center" style="transition-delay: 70ms">
-            <p class="mb-5 text-center text-xs font-bold uppercase tracking-[0.15em] text-[#F97316]">Operations</p>
-            <div class="flex w-full max-w-[260px] flex-col items-center">
-              <!-- OrgCard -->
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="GM Operations — owns day-to-day fleet and deployment.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">GM</div>
-                  <h3 class="min-w-0 text-sm font-bold text-slate-800">GM Operations</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Fleet, routing, and on-ground execution across all sites.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Manager Operation — coordinates supervisors and drivers.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">MO</div>
-                  <h3 class="text-sm font-bold text-slate-800">Manager Operation</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Site-level coordination, schedules, and service quality.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Site Incharge — single-point accountability per location.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">SI</div>
-                  <h3 class="text-sm font-bold text-slate-800">Site Incharge</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Local oversight, escalation, and daily operations.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Supervisor — field supervision and checks.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">SV</div>
-                  <h3 class="text-sm font-bold text-slate-800">Supervisor</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Chauffeur briefings, patrols, and compliance on route.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Driver — safe, compliant transport execution.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#F97316] to-orange-500 text-[10px] font-bold text-white ring-2 ring-orange-50" aria-hidden="true">DR</div>
-                  <h3 class="text-sm font-bold text-slate-800">Driver</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Customer-facing execution with HSSE-trained professionals.</div>
-              </article>
-            </div>
-          </div>
-
-          <!-- OrgColumn: Sales -->
-          <div class="reveal flex flex-col items-center border-t border-slate-100 pt-10 md:border-t-0 md:pt-0 xl:border-l xl:border-slate-100 xl:pl-6 xl:pt-0" style="transition-delay: 140ms">
-            <p class="mb-5 text-center text-xs font-bold uppercase tracking-[0.15em] text-[#F97316]">Sales</p>
-            <div class="flex w-full max-w-[260px] flex-col items-center">
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="GM Sales — B2B growth and key accounts.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">GS</div>
-                  <h3 class="text-sm font-bold text-slate-800">GM Sales</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Corporate contracts, renewals, and partnership growth.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Manager Sales — pipeline and account management.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">MS</div>
-                  <h3 class="text-sm font-bold text-slate-800">Manager Sales</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Deal execution, proposals, and client communication.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Assistant Manager — supports sales operations.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">AM</div>
-                  <h3 class="text-sm font-bold text-slate-800">Asst. Manager</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">CRM hygiene, follow-ups, and sales admin support.</div>
-              </article>
-            </div>
-          </div>
-
-          <!-- OrgColumn: Compliance -->
-          <div class="reveal flex flex-col items-center border-t border-slate-100 pt-10 md:border-t-0 md:pt-0 xl:border-l xl:border-slate-100 xl:pt-0 xl:pl-6" style="transition-delay: 210ms">
-            <p class="mb-5 text-center text-xs font-bold uppercase tracking-[0.15em] text-[#F97316]">Compliance</p>
-            <div class="flex w-full max-w-[260px] flex-col items-center">
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="GM Compliance — regulatory and policy framework.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">GC</div>
-                  <h3 class="text-sm font-bold text-slate-800">GM Compliance</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Policies, audits, and statutory adherence across the org.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Manager Compliance — implementation and checks.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">MC</div>
-                  <h3 class="text-sm font-bold text-slate-800">Manager Compliance</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Documentation, induction, and field compliance reviews.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Supervisor — operational compliance on site.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">SV</div>
-                  <h3 class="text-sm font-bold text-slate-800">Supervisor</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">On-ground verification and escalation to management.</div>
-              </article>
-            </div>
-          </div>
-
-          <!-- OrgColumn: MIS & Finance -->
-          <div class="reveal flex flex-col items-center border-t border-slate-100 pt-10 md:border-t-0 md:pt-0 xl:border-l xl:border-slate-100 xl:pt-0 xl:pl-6" style="transition-delay: 280ms">
-            <p class="mb-5 text-center text-xs font-bold uppercase tracking-[0.15em] text-[#F97316]">MIS &amp; Finance</p>
-            <div class="flex w-full max-w-[260px] flex-col items-center">
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="GM MIS and Finance — reporting and fiscal control.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">GF</div>
-                  <h3 class="text-sm font-bold text-slate-800">GM MIS &amp; Finance</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Consolidated dashboards, budgets, and financial discipline.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Manager Finance — accounting and controls.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">MF</div>
-                  <h3 class="text-sm font-bold text-slate-800">Manager Finance</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Payables, receivables, and financial reporting.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Manager Billing — invoicing and contracts.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">MB</div>
-                  <h3 class="text-sm font-bold text-slate-800">Manager Billing</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Rate cards, MIS for invoicing, and client billing cycles.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="Assistant Manager MIS — data and reporting ops.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1D4ED8] to-blue-600 text-[10px] font-bold text-white ring-2 ring-blue-50" aria-hidden="true">AM</div>
-                  <h3 class="text-sm font-bold text-slate-800">Asst. Manager MIS.</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">OTD, OTA, no-show analytics and operational dashboards.</div>
-              </article>
-              <div class="h-5 w-px bg-slate-200" aria-hidden="true"></div>
-              <article tabindex="0" class="org-card group relative w-full rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm shadow-slate-200/60 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-300/50 focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2" aria-label="MIS Executive — hands-on reporting and data entry.">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#F97316] to-orange-500 text-[10px] font-bold text-white ring-2 ring-orange-50" aria-hidden="true">ME</div>
-                  <h3 class="text-sm font-bold text-slate-800">MIS. Executive</h3>
-                </div>
-                <div class="org-card-tooltip pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-[min(100vw-2rem,14rem)] -translate-x-1/2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-white shadow-xl" role="tooltip">Daily MIS capture, help desk data, and report generation.</div>
-              </article>
-            </div>
-          </div>
+        <div class="reveal nt-org-pillar" style="transition-delay:100ms">
+          <h3 class="nt-org-pillar-title">Sales</h3>
+          <ul class="space-y-2">
+            <li class="nt-org-role"><span class="nt-org-avatar">GS</span> GM Sales</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">MS</span> Manager Sales</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">AM</span> Asst. Manager</li>
+          </ul>
         </div>
-
-        <div class="mt-10 flex flex-col items-center rounded-xl border border-slate-100 bg-gradient-to-r from-slate-50 via-white to-slate-50 px-6 py-5 text-center">
-          <p class="text-lg font-extrabold tracking-tight text-[#1D4ED8] md:text-xl">NIKITA TRADERS</p>
-          <p class="mt-1 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-slate-600">NT Services Management</p>
+        <div class="reveal nt-org-pillar" style="transition-delay:150ms">
+          <h3 class="nt-org-pillar-title">Compliance</h3>
+          <ul class="space-y-2">
+            <li class="nt-org-role"><span class="nt-org-avatar">GC</span> GM Compliance</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">MC</span> Manager Compliance</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">SV</span> Supervisor</li>
+          </ul>
         </div>
+        <div class="reveal nt-org-pillar" style="transition-delay:200ms">
+          <h3 class="nt-org-pillar-title">MIS &amp; Finance</h3>
+          <ul class="space-y-2">
+            <li class="nt-org-role"><span class="nt-org-avatar">GF</span> GM MIS &amp; Finance</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">MF</span> Manager Finance</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">MB</span> Manager Billing</li>
+            <li class="nt-org-role"><span class="nt-org-avatar">AM</span> Asst. Manager MIS</li>
+            <li class="nt-org-role"><span class="nt-org-avatar nt-org-avatar--accent">ME</span> MIS Executive</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal mt-14 rounded-xl border border-slate-200 bg-white px-6 py-5 text-center shadow-sm">
+        <p class="text-lg font-extrabold tracking-tight text-[#1D4ED8] md:text-xl">NIKITA TRADERS</p>
+        <p class="mt-1 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-slate-500">NT Services Management</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="bg-brand-blue-dark py-20 text-white md:py-28">
-    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+  <section id="contact" class="nt-contact-section py-20 md:py-28" aria-labelledby="contact-heading">
+    <div class="nt-contact-inner mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
       <div class="reveal mb-14 text-center">
-        <div class="section-heading-bar mx-auto mb-4 opacity-90" style="background: linear-gradient(90deg, #fb923c, #93c5fd)"></div>
-        <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Get in touch</h2>
-        <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-blue-100">
-          We welcome conversations about corporate contracts, monthly rentals, and on-call transport across Bihar, Jharkhand, and Odisha. Reach us by phone, email, or the form below—we typically respond within one business day.
+        <p class="text-xs font-bold uppercase tracking-[0.2em] text-sky-300">Contact</p>
+        <h2 id="contact-heading" class="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">Let’s design your mobility program</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-300">
+          Corporate contracts, monthly rentals, and on-call transport across Bihar, Jharkhand &amp; Odisha. We typically respond within one business day.
         </p>
       </div>
-      <div class="grid gap-12 lg:grid-cols-2">
-        <div class="reveal space-y-8">
-          <div class="flex gap-4">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-orange text-lg"><i class="fa-solid fa-phone"></i></span>
-            <div>
-              <p class="text-sm font-medium text-blue-200">Phone</p>
-              <a href="tel:+917735479750" class="text-lg font-semibold hover:text-orange-200">+91-7735479750</a>
+      <div class="grid gap-10 lg:grid-cols-2 lg:gap-12">
+        <div class="reveal nt-contact-panel">
+          <p class="mb-8 text-sm font-semibold uppercase tracking-wider text-slate-400">Direct channels</p>
+          <div class="space-y-8">
+            <div class="nt-contact-row">
+              <span class="nt-contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Phone</p>
+                <a href="tel:+917735479750" class="mt-1 block text-lg font-semibold text-white hover:text-orange-200">+91-7735479750</a>
+              </div>
+            </div>
+            <div class="nt-contact-row">
+              <span class="nt-contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+              <div class="min-w-0 flex-1">
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Email</p>
+                <a href="mailto:Bharatkumargupta736@gmail.com" class="mt-1 block break-all text-lg font-semibold text-white hover:text-orange-200">Bharatkumargupta736@gmail.com</a>
+              </div>
+            </div>
+            <div class="nt-contact-row">
+              <span class="nt-contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Office</p>
+                <p class="mt-1 text-lg font-semibold text-white">Paikaraypur Jatni, Khordha, Odisha</p>
+              </div>
             </div>
           </div>
-          <div class="flex gap-4">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-orange text-lg"><i class="fa-solid fa-envelope"></i></span>
-            <div>
-              <p class="text-sm font-medium text-blue-200">Email</p>
-              <a href="mailto:Bharatkumargupta736@gmail.com" class="break-all text-lg font-semibold hover:text-orange-200">Bharatkumargupta736@gmail.com</a>
-            </div>
+          <div class="mt-10 border-t border-white/10 pt-10">
+            <p class="mb-6 text-sm font-semibold uppercase tracking-wider text-slate-400">Enquiry form</p>
+            <form id="contact-form" class="space-y-4" novalidate>
+              <div>
+                <label for="cf-name" class="mb-1 block text-sm font-medium text-slate-300">Name</label>
+                <input id="cf-name" name="name" type="text" required minlength="2" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="Your name" />
+                <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-name"></p>
+              </div>
+              <div>
+                <label for="cf-email" class="mb-1 block text-sm font-medium text-slate-300">Work email</label>
+                <input id="cf-email" name="email" type="email" required class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="you@company.com" />
+                <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-email"></p>
+              </div>
+              <div>
+                <label for="cf-phone" class="mb-1 block text-sm font-medium text-slate-300">Phone (optional)</label>
+                <input id="cf-phone" name="phone" type="tel" pattern="[0-9+\s-]{10,}" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="+91..." />
+                <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-phone"></p>
+              </div>
+              <div>
+                <label for="cf-message" class="mb-1 block text-sm font-medium text-slate-300">How can we help?</label>
+                <textarea id="cf-message" name="message" rows="4" required minlength="10" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="Fleet size, locations, SLA expectations…"></textarea>
+                <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-message"></p>
+              </div>
+              <button type="submit" class="w-full rounded-xl bg-brand-orange py-3.5 font-bold text-white shadow-lg transition hover:bg-orange-600">Submit enquiry</button>
+              <p id="form-success" class="hidden text-center text-sm font-medium text-green-300">Thank you — your message looks good. Please call or email us to complete your enquiry.</p>
+            </form>
           </div>
-          <div class="flex gap-4">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-orange text-lg"><i class="fa-solid fa-location-dot"></i></span>
-            <div>
-              <p class="text-sm font-medium text-blue-200">Address</p>
-              <p class="text-lg font-semibold">Paikaraypur Jatni, Khordha, Orissa</p>
-            </div>
-          </div>
-          <form id="contact-form" class="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur" novalidate>
-            <div>
-              <label for="cf-name" class="mb-1 block text-sm font-medium text-blue-100">Name</label>
-              <input id="cf-name" name="name" type="text" required minlength="2" class="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="Your name" />
-              <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-name"></p>
-            </div>
-            <div>
-              <label for="cf-email" class="mb-1 block text-sm font-medium text-blue-100">Email</label>
-              <input id="cf-email" name="email" type="email" required class="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="you@company.com" />
-              <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-email"></p>
-            </div>
-            <div>
-              <label for="cf-phone" class="mb-1 block text-sm font-medium text-blue-100">Phone (optional)</label>
-              <input id="cf-phone" name="phone" type="tel" pattern="[0-9+\s-]{10,}" class="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="+91..." />
-              <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-phone"></p>
-            </div>
-            <div>
-              <label for="cf-message" class="mb-1 block text-sm font-medium text-blue-100">Message</label>
-              <textarea id="cf-message" name="message" rows="4" required minlength="10" class="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-blue-200/50 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/40" placeholder="Tell us about your transport needs"></textarea>
-              <p class="mt-1 hidden text-sm text-red-300" data-error-for="cf-message"></p>
-            </div>
-            <button type="submit" class="w-full rounded-xl bg-brand-orange py-3.5 font-bold text-white transition hover:bg-orange-600">Send message</button>
-            <p id="form-success" class="hidden text-center text-sm font-medium text-green-300">Thank you — your message looks good. Please call or email us to complete your enquiry.</p>
-          </form>
         </div>
-        <div class="reveal h-full min-h-[320px] overflow-hidden rounded-2xl border border-white/10 shadow-xl lg:min-h-[480px]">
+        <div class="reveal nt-map-shell">
           <iframe title="Nikita Traders location" class="h-full min-h-[320px] w-full lg:min-h-full" src="https://www.google.com/maps?q=Paikaraypur+Jatni+Khordha+Odisha&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -785,32 +672,50 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 bg-slate-900 py-12 text-slate-400">
-    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-      <div class="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
-        <div class="text-center md:text-left">
-          <p class="text-lg font-bold text-white">Nikita Traders</p>
-          <p class="text-sm text-slate-400">NT Services Management</p>
-          <p class="mt-2 max-w-xs text-sm">Leading cab &amp; corporate transport across Bihar, Jharkhand &amp; Odisha.</p>
+  <footer class="site-footer">
+    <div class="mx-auto max-w-7xl px-4 py-16 md:px-6 lg:px-8">
+      <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="site-footer__brand">Nikita Traders</p>
+          <p class="mt-1 text-sm text-slate-500">NT Services Management</p>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-500">ISO-minded corporate transport with live visibility and 24×7 command for teams across Eastern India.</p>
         </div>
-        <nav class="flex flex-wrap justify-center gap-6 text-sm font-medium">
-          <a href="#hero" class="hover:text-white">Home</a>
-          <a href="#about" class="hover:text-white">About</a>
-          <a href="#services" class="hover:text-white">Services</a>
-          <a href="#fleet" class="hover:text-white">Fleet</a>
-          <a href="#delivery-flow" class="hover:text-white">Flow</a>
-          <a href="#booking-process" class="hover:text-white">Roadmap</a>
-          <a href="#clients" class="hover:text-white">Clients</a>
-          <a href="#org" class="hover:text-white">Org Chart</a>
-          <a href="#contact" class="hover:text-white">Contact</a>
-        </nav>
+        <div>
+          <p class="site-footer__tag">Product</p>
+          <ul class="space-y-2">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#delivery-flow">Delivery flow</a></li>
+            <li><a href="#stats">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__tag">Company</p>
+          <ul class="space-y-2">
+            <li><a href="#about">About</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#booking-process">Roadmap</a></li>
+            <li><a href="#org">Organization</a></li>
+            <li><a href="#clients">Clients</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__tag">Contact</p>
+          <ul class="space-y-2">
+            <li><a href="#contact">Enquiry</a></li>
+            <li><a href="tel:+917735479750">+91-7735479750</a></li>
+            <li><a href="mailto:Bharatkumargupta736@gmail.com">Email us</a></li>
+            <li><span class="text-sm text-slate-500">Paikaraypur Jatni, Khordha, Odisha</span></li>
+          </ul>
+        </div>
       </div>
-      <p class="mt-10 text-center text-xs text-slate-500">
-        &copy; <span id="year"></span> Nikita Traders · NT Services Management · Corporate transport · Bihar, Jharkhand &amp; Odisha
-      </p>
+      <div class="site-footer__bottom">
+        <p>&copy; <span id="year"></span> Nikita Traders · NT Services Management · Bihar, Jharkhand &amp; Odisha</p>
+      </div>
     </div>
   </footer>
+
+
 
   <script src="app.js"></script>
 </body>
