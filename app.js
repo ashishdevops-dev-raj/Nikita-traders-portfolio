@@ -1,35 +1,3 @@
-/* Tailwind CDN theme extension — must run after tailwindcss.com script */
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
-      colors: {
-        brand: {
-          blue: '#1e40af',
-          'blue-dark': '#1e3a8a',
-          'blue-light': '#3b82f6',
-          orange: '#ea580c',
-          'orange-light': '#fb923c',
-        },
-      },
-      animation: {
-        'fade-up': 'fadeUp 0.7s ease forwards',
-        'slide-in': 'slideIn 0.6s ease forwards',
-      },
-      keyframes: {
-        fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        slideIn: {
-          '0%': { opacity: '0', transform: 'translateX(-16px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-      },
-    },
-  },
-};
-
 (function () {
   document.documentElement.classList.add('js');
 
